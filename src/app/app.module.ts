@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
+import { FooterComponent } from './footer/footer.component';
+import { LandingComponent } from './landing/landing.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    LandingComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
