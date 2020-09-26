@@ -6,10 +6,12 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-  },
-  {
+  },{
     path: 'carnelian',
     component : LandingComponent
+  },{
+    path: 'dashboard',
+    loadChildren: () => import('./user/user.module').then(m => m.UserModule)
   }
 ];
 

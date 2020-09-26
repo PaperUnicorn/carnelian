@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  sidenavVisible = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSidenav(e){
+    e.preventDefault;
+    this.sidenavVisible = !this.sidenavVisible;
+    console.log(this.sidenavVisible);
+  }
 }
