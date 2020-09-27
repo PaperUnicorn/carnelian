@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   sidenavVisible = true;
-  constructor() { }
+  constructor() { 
+    this.sidenavVisible = true;
+  }
 
   ngOnInit(): void {
+    this.sidenavVisible = true;
   }
 
   toggleSidenav(e){
-    e.preventDefault;
     this.sidenavVisible = !this.sidenavVisible;
-    console.log(this.sidenavVisible);
   }
 }

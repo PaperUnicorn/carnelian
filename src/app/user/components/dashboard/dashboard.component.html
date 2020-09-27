@@ -1,15 +1,17 @@
 <div class="d-flex" id="wrapper">
-    <div #sidenav class="bg-light border-right " [ngClass] = "sidenavVisible ? 'sidebar-wrapper-open':'sidebar-wrapper-closed'">
-    <app-sidebar></app-sidebar>
+    <div class="bg-light border-right " [ngClass] = "sidenavVisible ? 'sidebar-wrapper-open':'sidebar-wrapper-closed'">
+      <app-sidebar></app-sidebar>
+      <a class="btn btn-primary float-right" id="toggleButton" (click) = "toggleSidenav($event)" ><<</a>
     </div>
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <!-- <div id="page-content-wrapper">
         <div class="container-fluid">
           <h1 class="mt-4">Simple Sidebar</h1>
           <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
           <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
           <button class="btn btn-primary" id="menu-toggle" (click) = "toggleSidenav($event)" >Toggle Menu</button>
-        </div>
-        
-    </div>
+        </div> 
+    </div> -->
+
+    <project-summary></project-summary>
 </div>
