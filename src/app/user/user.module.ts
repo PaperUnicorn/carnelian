@@ -4,6 +4,7 @@ import { CoreModule } from '../core/core.module';
 import { UserRoutingModule } from './user-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProjectModule } from '../project/project.module';
+import { TeamModule } from '../team/team.module';
 import { from } from 'rxjs';
 
 
@@ -14,6 +15,7 @@ import { from } from 'rxjs';
     CommonModule,
     CoreModule,
     ProjectModule,
+    TeamModule,
     UserRoutingModule
   ]
 })

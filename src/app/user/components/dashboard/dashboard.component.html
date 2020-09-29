@@ -1,6 +1,6 @@
 <div class="d-flex" id="wrapper">
     <div class="bg-light border-right " [ngClass] = "sidenavVisible ? 'sidebar-wrapper-open':'sidebar-wrapper-closed'">
-      <app-sidebar></app-sidebar>
+      <app-sidebar (selectedComponent) = "changeSelection($event)"></app-sidebar>
       <a class="btn btn-primary float-right" id="toggleButton" (click) = "toggleSidenav($event)" ><<</a>
     </div>
     <!-- Page Content -->
@@ -12,6 +12,11 @@
           <button class="btn btn-primary" id="menu-toggle" (click) = "toggleSidenav($event)" >Toggle Menu</button>
         </div> 
     </div> -->
-
-    <project-summary></project-summary>
+    <div *ngIf = "componentToLoad == 'project'">
+      <project-summary></project-summary>
+    </div>
+    
+    <div *ngIf = "componentToLoad == 'team'">
+      <team-summary></team-summary>
+    </div>
 </div>
