@@ -7,6 +7,8 @@ import { ProjectModule } from '../project/project.module';
 import { TeamModule } from '../team/team.module';
 import { from } from 'rxjs';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { from } from 'rxjs';
     CoreModule,
     ProjectModule,
     TeamModule,
-    UserRoutingModule
+    UserRoutingModule,
+    HttpClientModule
   ]
 })
 export class UserModule { }
