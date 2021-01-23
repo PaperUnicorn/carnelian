@@ -12,6 +12,7 @@
           <button class="btn btn-primary" id="menu-toggle" (click) = "toggleSidenav($event)" >Toggle Menu</button>
         </div> 
     </div> -->
+    <div class = container>
     <div *ngIf = "componentToLoad == 'project'">
       <project-summary></project-summary>
     </div>
@@ -19,4 +20,5 @@
     <div *ngIf = "componentToLoad == 'team'">
       <team-summary></team-summary>
     </div>
+  </div>
 </div>
